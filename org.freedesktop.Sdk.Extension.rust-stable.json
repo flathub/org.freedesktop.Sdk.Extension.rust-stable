@@ -33,32 +33,32 @@
           "only-arches": [
             "i386"
           ],
-          "url": "https://static.rust-lang.org/dist/rust-1.25.0-i686-unknown-linux-gnu.tar.gz",
-          "sha256": "56c5ffdca29f8a3657d012d24644fd335405d7dac0b720b17f6321111f9c0e55"
+          "url": "https://static.rust-lang.org/dist/rust-1.26.0-i686-unknown-linux-gnu.tar.gz",
+          "sha256": "2aef0709b1f2e93d396143b7a926f262ac6fd24dd8768bf2c9425255a4a401c1"
         },
         {
           "type": "archive",
           "only-arches": [
             "arm"
           ],
-          "url": "https://static.rust-lang.org/dist/rust-1.25.0-arm-unknown-linux-gnueabihf.tar.gz",
-          "sha256": "eb54299b460877b3f0e8d501e753c996f94bd6569b73920b7f20c65975c0ec3f"
+          "url": "https://static.rust-lang.org/dist/rust-1.26.0-arm-unknown-linux-gnueabihf.tar.gz",
+          "sha256": "10e1c03e8e86f9357615befa5b0ddc32cdf3c85e1e019d7225850be3b3c3da91"
         },
         {
           "type": "archive",
           "only-arches": [
             "aarch64"
           ],
-          "url": "https://static.rust-lang.org/dist/rust-1.25.0-aarch64-unknown-linux-gnu.tar.gz",
-          "sha256": "19a43451439e515a216d0a885d14203f9a92502ee958abf86bf7000a7d73d73d"
+          "url": "https://static.rust-lang.org/dist/rust-1.26.0-aarch64-unknown-linux-gnu.tar.gz",
+          "sha256": "e12dc84bdb569cdb382268a5fe6ae6a8e2e53810cb890ec3a7133c20ba8451ac"
         },
         {
           "type": "archive",
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://static.rust-lang.org/dist/rust-1.25.0-x86_64-unknown-linux-gnu.tar.gz",
-          "sha256": "06fb45fb871330a2d1b32a27badfe9085847fe824c189ddc5204acbe27664f5e"
+          "url": "https://static.rust-lang.org/dist/rust-1.26.0-x86_64-unknown-linux-gnu.tar.gz",
+          "sha256": "13691d7782577fc9f110924b26603ade1990de0b691a3ce2dc324b4a72a64a68"
         }
       ],
       "build-commands": [
