@@ -62,8 +62,6 @@
         }
       ],
       "build-commands": [
-        "./install.sh --help",
-        "./install.sh --list-components --verbose",
         "./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
       ]
     },
