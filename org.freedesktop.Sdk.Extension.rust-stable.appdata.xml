@@ -4,4 +4,5 @@
   <metadata_license>CC0-1.0</metadata_license>
   <name>Rust stable Sdk extension</name>
   <summary>Rust compiler and tools</summary>
+  <project_license>Apache-2.0 AND MIT</project_license>
 </component>
