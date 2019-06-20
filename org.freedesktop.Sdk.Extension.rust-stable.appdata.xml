@@ -5,4 +5,5 @@
   <name>Rust stable Sdk extension</name>
   <summary>Rust compiler and tools</summary>
   <project_license>Apache-2.0 AND MIT</project_license>
+  <url type="homepage">https://github.com/flathub/org.freedesktop.Sdk.Extension.rust-stable/</url>
 </component>
