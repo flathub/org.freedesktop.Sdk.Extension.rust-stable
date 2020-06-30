@@ -48,13 +48,13 @@
                     "only-arches": [
                         "arm"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.43.0-arm-unknown-linux-gnueabihf.tar.gz",
+                    "url": "https://static.rust-lang.org/dist/rust-1.43.0-armv7-unknown-linux-gnueabihf.tar.gz",
                     "sha256": "da6b19d4e4a4818df46d2d2dca5fd83e073b86179158fdda8af2419f8bc9ebe7",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://static.rust-lang.org/dist/rust-$version-arm-unknown-linux-gnu.tar.gz"
+                        "url-template": "https://static.rust-lang.org/dist/rust-$version-armv7-unknown-linux-gnueabihf.tar.gz"
                     }
                 },
                 {
