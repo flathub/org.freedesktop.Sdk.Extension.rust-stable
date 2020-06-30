@@ -1,124 +1,127 @@
 {
-  "id": "org.freedesktop.Sdk.Extension.rust-stable",
-  "branch": "1.6",
-  "runtime": "org.freedesktop.Sdk",
-  "build-extension": true,
-  "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "1.6",
-  "sdk-extensions": [],
-  "separate-locales": false,
-  "appstream-compose": false,
-  "cleanup": [
-    "/share/info",
-    "/share/man"
-  ],
-  "build-options": {
-    "cflags": "-O2 -g",
-    "cxxflags": "-O2 -g",
-    "prefix": "/usr/lib/sdk/rust-stable",
-    "env": {
-      "V": "1"
-    }
-  },
-  "modules": [
-    {
-      "name": "rust",
-      "buildsystem": "simple",
-      "cleanup": [
-        "/share/doc/rust/html"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "only-arches": [
-            "i386"
-          ],
-          "url": "https://static.rust-lang.org/dist/rust-1.43.0-i686-unknown-linux-gnu.tar.gz",
-          "sha256": "c532385b79fa97144367a7f785f1d8437341099e7b2f065b1ae0b6938ff9b53c",
-          "x-checker-data": {
-            "type": "html",
-            "url": "https://www.rust-lang.org/",
-            "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-            "url-template": "https://static.rust-lang.org/dist/rust-$version-i686-unknown-linux-gnu.tar.gz"
-          }
-        },
-        {
-          "type": "archive",
-          "only-arches": [
-            "arm"
-          ],
-          "url": "https://static.rust-lang.org/dist/rust-1.43.0-arm-unknown-linux-gnueabihf.tar.gz",
-          "sha256": "da6b19d4e4a4818df46d2d2dca5fd83e073b86179158fdda8af2419f8bc9ebe7",
-          "x-checker-data": {
-            "type": "html",
-            "url": "https://www.rust-lang.org/",
-            "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-            "url-template": "https://static.rust-lang.org/dist/rust-$version-arm-unknown-linux-gnu.tar.gz"
-          }
-        },
-        {
-          "type": "archive",
-          "only-arches": [
-            "aarch64"
-          ],
-          "url": "https://static.rust-lang.org/dist/rust-1.43.0-aarch64-unknown-linux-gnu.tar.gz",
-          "sha256": "e5fa55f333c10cdae43d147438a80ffb435d6c7b9681cd2e2f0857c024556856",
-          "x-checker-data": {
-            "type": "html",
-            "url": "https://www.rust-lang.org/",
-            "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-            "url-template": "https://static.rust-lang.org/dist/rust-$version-aarch64-unknown-linux-gnu.tar.gz"
-          }
-        },
-        {
-          "type": "archive",
-          "only-arches": [
-            "x86_64"
-          ],
-          "url": "https://static.rust-lang.org/dist/rust-1.43.0-x86_64-unknown-linux-gnu.tar.gz",
-          "sha256": "069f34fa5cef92551724c83c36360df1ac66fe3942bc1d0e4d341ce79611a029",
-          "x-checker-data": {
-            "type": "html",
-            "url": "https://www.rust-lang.org/",
-            "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-            "url-template": "https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
-          }
+    "id": "org.freedesktop.Sdk.Extension.rust-stable",
+    "branch": "1.6",
+    "runtime": "org.freedesktop.Sdk",
+    "build-extension": true,
+    "sdk": "org.freedesktop.Sdk",
+    "runtime-version": "1.6",
+    "sdk-extensions": [],
+    "separate-locales": false,
+    "appstream-compose": false,
+    "cleanup": [
+        "/share/info",
+        "/share/man"
+    ],
+    "build-options": {
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g",
+        "prefix": "/usr/lib/sdk/rust-stable",
+        "env": {
+            "V": "1"
         }
-      ],
-      "build-commands": [
-        "./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
-      ]
     },
-    {
-      "name": "scripts",
-      "sources": [
+    "modules": [
         {
-          "type": "script",
-          "commands": [
-            "export PATH=$PATH:/usr/lib/sdk/rust-stable/bin"
-          ],
-          "dest-filename": "enable.sh"
-        }
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "cp enable.sh /usr/lib/sdk/rust-stable/"
-      ]
-    },
-    {
-      "name": "appdata",
-      "buildsystem": "simple",
-      "build-commands": [
-        "mkdir -p ${FLATPAK_DEST}/share/appdata",
-        "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/appdata",
-        "appstream-compose  --basename=org.freedesktop.Sdk.Extension.rust-stable --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.Sdk.Extension.rust-stable"
-      ],
-      "sources": [
+            "name": "rust",
+            "buildsystem": "simple",
+            "cleanup": [
+                "/share/doc/rust/html"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "i386"
+                    ],
+                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-i686-unknown-linux-gnu.tar.gz",
+                    "sha256": "e69689b0a1b66599cf83e7dd54f839419007e44376195e93e301a3175da3d854",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.rust-lang.org/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://static.rust-lang.org/dist/rust-$version-i686-unknown-linux-gnu.tar.gz"
+                    },
+                    "size": 205340142
+                },
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "arm"
+                    ],
+                    "url": "https://static.rust-lang.org/dist/rust-1.43.0-arm-unknown-linux-gnueabihf.tar.gz",
+                    "sha256": "da6b19d4e4a4818df46d2d2dca5fd83e073b86179158fdda8af2419f8bc9ebe7",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.rust-lang.org/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://static.rust-lang.org/dist/rust-$version-arm-unknown-linux-gnu.tar.gz"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-aarch64-unknown-linux-gnu.tar.gz",
+                    "sha256": "a2d74ebeec0b6778026b6c37814cdc91d14db3b0d8b6d69d036216f4d9cf7e49",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.rust-lang.org/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://static.rust-lang.org/dist/rust-$version-aarch64-unknown-linux-gnu.tar.gz"
+                    },
+                    "size": 157572047
+                },
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-x86_64-unknown-linux-gnu.tar.gz",
+                    "sha256": "a41df89a461a580536aeb42755e43037556fba2e527dd13a1e1bb0749de28202",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.rust-lang.org/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
+                    },
+                    "size": 189534350
+                }
+            ],
+            "build-commands": [
+                "./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
+            ]
+        },
         {
-          "type": "file",
-          "path": "org.freedesktop.Sdk.Extension.rust-stable.appdata.xml"
+            "name": "scripts",
+            "sources": [
+                {
+                    "type": "script",
+                    "commands": [
+                        "export PATH=$PATH:/usr/lib/sdk/rust-stable/bin"
+                    ],
+                    "dest-filename": "enable.sh"
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "cp enable.sh /usr/lib/sdk/rust-stable/"
+            ]
+        },
+        {
+            "name": "appdata",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p ${FLATPAK_DEST}/share/appdata",
+                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/appdata",
+                "appstream-compose  --basename=org.freedesktop.Sdk.Extension.rust-stable --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.Sdk.Extension.rust-stable"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "org.freedesktop.Sdk.Extension.rust-stable.appdata.xml"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
