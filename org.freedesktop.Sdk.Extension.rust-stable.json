@@ -48,8 +48,8 @@
                     "only-arches": [
                         "arm"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.43.0-armv7-unknown-linux-gnueabihf.tar.gz",
-                    "sha256": "da6b19d4e4a4818df46d2d2dca5fd83e073b86179158fdda8af2419f8bc9ebe7",
+                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-armv7-unknown-linux-gnueabihf.tar.gz",
+                    "sha256": "d44294732cf268ea84908f1135f574ab9489132a332eaa9d5bda547374b15d54",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
