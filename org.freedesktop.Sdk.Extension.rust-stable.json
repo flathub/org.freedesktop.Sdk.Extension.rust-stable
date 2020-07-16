@@ -28,59 +28,60 @@
                     "only-arches": [
                         "i386"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-i686-unknown-linux-gnu.tar.gz",
-                    "sha256": "e69689b0a1b66599cf83e7dd54f839419007e44376195e93e301a3175da3d854",
+                    "url": "https://static.rust-lang.org/dist/rust-1.45.0-i686-unknown-linux-gnu.tar.gz",
+                    "sha256": "38189de49bb21b18768db8479fe8cf434784d87b3df0adfedcc2a41289ef1552",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-i686-unknown-linux-gnu.tar.gz"
                     },
-                    "size": 205340142
+                    "size": 218985239
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "arm"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-armv7-unknown-linux-gnueabihf.tar.gz",
-                    "sha256": "d44294732cf268ea84908f1135f574ab9489132a332eaa9d5bda547374b15d54",
+                    "url": "https://static.rust-lang.org/dist/rust-1.45.0-armv7-unknown-linux-gnueabihf.tar.gz",
+                    "sha256": "436a4837244eb44a0e46cb2bae16b98581d1ccb6d0de903ad35f3e3005d2e69e",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-armv7-unknown-linux-gnueabihf.tar.gz"
-                    }
+                    },
+                    "size": 175787526
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-aarch64-unknown-linux-gnu.tar.gz",
-                    "sha256": "a2d74ebeec0b6778026b6c37814cdc91d14db3b0d8b6d69d036216f4d9cf7e49",
+                    "url": "https://static.rust-lang.org/dist/rust-1.45.0-aarch64-unknown-linux-gnu.tar.gz",
+                    "sha256": "b727be0ecdee5fb88775b784758a09ab696293048a80288999b8a6f78b160212",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-aarch64-unknown-linux-gnu.tar.gz"
                     },
-                    "size": 157572047
+                    "size": 171811619
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.44.1-x86_64-unknown-linux-gnu.tar.gz",
-                    "sha256": "a41df89a461a580536aeb42755e43037556fba2e527dd13a1e1bb0749de28202",
+                    "url": "https://static.rust-lang.org/dist/rust-1.45.0-x86_64-unknown-linux-gnu.tar.gz",
+                    "sha256": "c34ed8722759fd60c94dbc9069833da5b3b873dcd19afaa9b34c1ce2c2cfa229",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
                     },
-                    "size": 189534350
+                    "size": 200994330
                 }
             ],
             "build-commands": [
