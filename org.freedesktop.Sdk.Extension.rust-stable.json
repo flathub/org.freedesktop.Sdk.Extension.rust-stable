@@ -26,21 +26,6 @@
                 {
                     "type": "archive",
                     "only-arches": [
-                        "i386"
-                    ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.45.2-i686-unknown-linux-gnu.tar.gz",
-                    "sha256": "5b2050dde23152750de89f7e59acaab6bf088d0beb5854c69c9a545fd254b936",
-                    "x-checker-data": {
-                        "type": "html",
-                        "url": "https://www.rust-lang.org/",
-                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://static.rust-lang.org/dist/rust-$version-i686-unknown-linux-gnu.tar.gz"
-                    },
-                    "size": 219033716
-                },
-                {
-                    "type": "archive",
-                    "only-arches": [
                         "arm"
                     ],
                     "url": "https://static.rust-lang.org/dist/rust-1.45.2-armv7-unknown-linux-gnueabihf.tar.gz",
