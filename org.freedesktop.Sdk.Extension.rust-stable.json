@@ -28,45 +28,45 @@
                     "only-arches": [
                         "arm"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.46.0-armv7-unknown-linux-gnueabihf.tar.gz",
-                    "sha256": "7c0640879d7f2c38db60352e3c0f09e3fc6fa3bac6ca8f22cbccb1eb5e950121",
+                    "url": "https://static.rust-lang.org/dist/rust-1.47.0-armv7-unknown-linux-gnueabihf.tar.gz",
+                    "sha256": "19d0fe3892a8e98f99c5aa84f4d6f260853147650cb71f2bae985c91de6c29af",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-armv7-unknown-linux-gnueabihf.tar.gz"
                     },
-                    "size": 189252405
+                    "size": 204608369
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.46.0-aarch64-unknown-linux-gnu.tar.gz",
-                    "sha256": "f0c6d630f3dedb3db69d69ed9f833aa6b472363096f5164f1068c7001ca42aeb",
+                    "url": "https://static.rust-lang.org/dist/rust-1.47.0-aarch64-unknown-linux-gnu.tar.gz",
+                    "sha256": "753c905e89a714ab9bce6fe1397b721f29c0760c32f09d2f328af3d39919c8e6",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-aarch64-unknown-linux-gnu.tar.gz"
                     },
-                    "size": 198415462
+                    "size": 213224859
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://static.rust-lang.org/dist/rust-1.46.0-x86_64-unknown-linux-gnu.tar.gz",
-                    "sha256": "e3b98bc3440fe92817881933f9564389eccb396f5f431f33d48b979fa2fbdcf5",
+                    "url": "https://static.rust-lang.org/dist/rust-1.47.0-x86_64-unknown-linux-gnu.tar.gz",
+                    "sha256": "d0e11e1756a072e8e246b05d54593402813d047d12e44df281fbabda91035d96",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.rust-lang.org/",
                         "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
                     },
-                    "size": 220885103
+                    "size": 258961351
                 }
             ],
             "build-commands": [
