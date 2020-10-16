@@ -67,6 +67,21 @@
                         "url-template": "https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
                     },
                     "size": 258961351
+                },
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "i386"
+                    ],
+                    "url": "https://static.rust-lang.org/dist/rust-1.47.0-i686-unknown-linux-gnu.tar.gz",
+                    "sha256": "84bf092130ea5216fc701871e633563fc1c01b6528f60cb0767e96cd8eec30bf",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.rust-lang.org/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://static.rust-lang.org/dist/rust-$version-i686-unknown-linux-gnu.tar.gz"
+                    },
+                    "size": 260725750
                 }
             ],
             "build-commands": [
