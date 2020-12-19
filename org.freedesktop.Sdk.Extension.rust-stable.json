@@ -116,6 +116,25 @@
             ]
         },
         {
+            "name": "rust-src",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/rust-lang/rust/archive/1.48.0.tar.gz",
+                    "sha256": "d5a72a5a375f147f90dd980d88b2625ed84f4944cab25ecf353da8f00d1c25c5",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": "7635",
+                        "url-template": "https://github.com/rust-lang/rust/archive/$version.tar.gz"
+                    }
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /usr/lib/sdk/rust-stable/lib/rustlib/src/rust/",
+                "cp -r library /usr/lib/sdk/rust-stable/lib/rustlib/src/rust/"]
+        },
+        {
             "name": "scripts",
             "sources": [
                 {
