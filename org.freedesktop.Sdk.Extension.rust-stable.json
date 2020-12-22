@@ -34,7 +34,6 @@
                     "sha256": "3aed4a63ebdd57690a31d11afbe95e6407edc224a6769be5694a1ed43bf899cb",
                     "x-checker-data": {
                         "type": "rust",
-                        "channel": "stable",
                         "package": "rust",
                         "target": "armv7-unknown-linux-gnueabihf"
                     },
@@ -50,7 +49,6 @@
                     "sha256": "c4769418d8d89f432e4a3a21ad60f99629e4b13bbfc29aef7d9d51c4e8ee8a8a",
                     "x-checker-data": {
                         "type": "rust",
-                        "channel": "stable",
                         "package": "rust",
                         "target": "aarch64-unknown-linux-gnu"
                     },
@@ -66,7 +64,6 @@
                     "sha256": "950420a35b2dd9091f1b93a9ccd5abc026ca7112e667f246b1deb79204e2038b",
                     "x-checker-data": {
                         "type": "rust",
-                        "channel": "stable",
                         "package": "rust",
                         "target": "x86_64-unknown-linux-gnu"
                     },
@@ -83,7 +80,6 @@
                     "sha256": "7fdb8836a1f0427d5b47e6a2d496f67ebff04350407411f57cf20c9b3544e26f",
                     "x-checker-data": {
                         "type": "rust",
-                        "channel": "stable",
                         "package": "rust",
                         "target": "i686-unknown-linux-gnu"
                     },
