@@ -30,14 +30,13 @@
                         "aarch64"
                     ],
                     "dest": "rust-armv7-unknown-linux-gnueabihf",
-                    "url": "https://static.rust-lang.org/dist/rust-1.48.0-armv7-unknown-linux-gnueabihf.tar.gz",
-                    "sha256": "3aed4a63ebdd57690a31d11afbe95e6407edc224a6769be5694a1ed43bf899cb",
+                    "url": "https://static.rust-lang.org/dist/2020-11-19/rust-1.48.0-armv7-unknown-linux-gnueabihf.tar.xz",
+                    "sha256": "c8c14efc98e4864c6759c42751247ab09c3c8680f01c102170daec97a0b71623",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
                         "target": "armv7-unknown-linux-gnueabihf"
-                    },
-                    "size": 204324766
+                    }
                 },
                 {
                     "type": "archive",
@@ -45,14 +44,13 @@
                         "aarch64"
                     ],
                     "dest": "rust-aarch64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/rust-1.48.0-aarch64-unknown-linux-gnu.tar.gz",
-                    "sha256": "c4769418d8d89f432e4a3a21ad60f99629e4b13bbfc29aef7d9d51c4e8ee8a8a",
+                    "url": "https://static.rust-lang.org/dist/2020-11-19/rust-1.48.0-aarch64-unknown-linux-gnu.tar.xz",
+                    "sha256": "bd5a8b4c891c1f569381c0c42a61a1f5c5aa0b34d34d6cd3ed6e5d37f24c00d4",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
                         "target": "aarch64-unknown-linux-gnu"
-                    },
-                    "size": 213437710
+                    }
                 },
                 {
                     "type": "archive",
@@ -60,14 +58,13 @@
                         "x86_64"
                     ],
                     "dest": "rust-x86_64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/rust-1.48.0-x86_64-unknown-linux-gnu.tar.gz",
-                    "sha256": "950420a35b2dd9091f1b93a9ccd5abc026ca7112e667f246b1deb79204e2038b",
+                    "url": "https://static.rust-lang.org/dist/2020-11-19/rust-1.48.0-x86_64-unknown-linux-gnu.tar.xz",
+                    "sha256": "58270d8e10f72e1712ba08db6b8f8ffca64a63d1a7b220688b59fb05655b3843",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
                         "target": "x86_64-unknown-linux-gnu"
-                    },
-                    "size": 266268898
+                    }
                 },
                 {
                     "type": "archive",
@@ -76,14 +73,13 @@
                         "x86_64"
                     ],
                     "dest": "rust-i686-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/rust-1.48.0-i686-unknown-linux-gnu.tar.gz",
-                    "sha256": "7fdb8836a1f0427d5b47e6a2d496f67ebff04350407411f57cf20c9b3544e26f",
+                    "url": "https://static.rust-lang.org/dist/2020-11-19/rust-1.48.0-i686-unknown-linux-gnu.tar.xz",
+                    "sha256": "ddbfb5af1cd2cb6ae79d6f3f95cf29c0057e6387eada8b3975e7d7658e315aae",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
                         "target": "i686-unknown-linux-gnu"
-                    },
-                    "size": 267825837
+                    }
                 }
             ],
             "build-options": {
