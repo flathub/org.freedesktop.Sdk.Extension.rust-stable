@@ -33,10 +33,9 @@
                     "url": "https://static.rust-lang.org/dist/rust-1.48.0-armv7-unknown-linux-gnueabihf.tar.gz",
                     "sha256": "3aed4a63ebdd57690a31d11afbe95e6407edc224a6769be5694a1ed43bf899cb",
                     "x-checker-data": {
-                        "type": "html",
-                        "url": "https://www.rust-lang.org/",
-                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://static.rust-lang.org/dist/rust-$version-armv7-unknown-linux-gnueabihf.tar.gz"
+                        "type": "rust",
+                        "package": "rust",
+                        "target": "armv7-unknown-linux-gnueabihf"
                     },
                     "size": 204324766
                 },
@@ -49,10 +48,9 @@
                     "url": "https://static.rust-lang.org/dist/rust-1.48.0-aarch64-unknown-linux-gnu.tar.gz",
                     "sha256": "c4769418d8d89f432e4a3a21ad60f99629e4b13bbfc29aef7d9d51c4e8ee8a8a",
                     "x-checker-data": {
-                        "type": "html",
-                        "url": "https://www.rust-lang.org/",
-                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://static.rust-lang.org/dist/rust-$version-aarch64-unknown-linux-gnu.tar.gz"
+                        "type": "rust",
+                        "package": "rust",
+                        "target": "aarch64-unknown-linux-gnu"
                     },
                     "size": 213437710
                 },
@@ -65,10 +63,9 @@
                     "url": "https://static.rust-lang.org/dist/rust-1.48.0-x86_64-unknown-linux-gnu.tar.gz",
                     "sha256": "950420a35b2dd9091f1b93a9ccd5abc026ca7112e667f246b1deb79204e2038b",
                     "x-checker-data": {
-                        "type": "html",
-                        "url": "https://www.rust-lang.org/",
-                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
+                        "type": "rust",
+                        "package": "rust",
+                        "target": "x86_64-unknown-linux-gnu"
                     },
                     "size": 266268898
                 },
@@ -82,10 +79,9 @@
                     "url": "https://static.rust-lang.org/dist/rust-1.48.0-i686-unknown-linux-gnu.tar.gz",
                     "sha256": "7fdb8836a1f0427d5b47e6a2d496f67ebff04350407411f57cf20c9b3544e26f",
                     "x-checker-data": {
-                        "type": "html",
-                        "url": "https://www.rust-lang.org/",
-                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://static.rust-lang.org/dist/rust-$version-i686-unknown-linux-gnu.tar.gz"
+                        "type": "rust",
+                        "package": "rust",
+                        "target": "i686-unknown-linux-gnu"
                     },
                     "size": 267825837
                 }
