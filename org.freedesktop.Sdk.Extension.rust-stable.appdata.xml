@@ -12,6 +12,7 @@
   <translation/>
   <update_contact>danigm@gnome.org</update_contact>
   <releases>
+    <release version="1.49.0" date="2020-12-31"/>
     <release version="1.48.0 (7eac88abb 2020-11-16)" date="2020-11-19"/>
     <release version="1.48.0" date="2020-11-19"/>
     <release version="1.47.0" date="2020-10-08"/>
