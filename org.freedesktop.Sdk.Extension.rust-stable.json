@@ -80,6 +80,17 @@
                         "package": "rust",
                         "target": "i686-unknown-linux-gnu"
                     }
+                },
+                {
+                    "type": "archive",
+                    "dest": "rust-src",
+                    "url": "https://static.rust-lang.org/dist/2020-12-31/rust-src-1.49.0.tar.xz",
+                    "sha256": "688b345fbc9b22aa197297a228f4e756f2c0bb8fb1edea6e272391ed314af348",
+                    "x-checker-data": {
+                        "type": "rust",
+                        "package": "rust-src",
+                        "target": "*"
+                    }
                 }
             ],
             "build-options": {
@@ -112,7 +123,8 @@
             },
             "build-commands": [
                 "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose",
-                "test -n \"$COMPAT_TARGET\" && cd \"rust-$COMPAT_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose --components=rust-std-$COMPAT_TARGET,rust-analysis-$COMPAT_TARGET"
+                "test -n \"$COMPAT_TARGET\" &&  cd \"rust-$COMPAT_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose --components=rust-std-$COMPAT_TARGET,rust-analysis-$COMPAT_TARGET",
+                "cd rust-src && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
             ]
         },
         {
