@@ -22,6 +22,9 @@
             "cleanup": [
                 "/share/doc/rust/html"
             ],
+            "post-install": [
+                "rm /usr/lib/sdk/rust-stable/bin/rust-analyzer"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -125,6 +128,20 @@
                 "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose",
                 "test -n \"$COMPAT_TARGET\" &&  cd \"rust-$COMPAT_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose --components=rust-std-$COMPAT_TARGET,rust-analysis-$COMPAT_TARGET",
                 "cd rust-src && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
+            ]
+        },
+        {
+            "name": "rust-analyzer",
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2020-12-28/rust-analyzer-linux",
+                    "sha256": "6e390a789c997ec5f6eb4b536c2c9395f5374e8815ce7fc4a51dce41cd44cd19"
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m 755 rust-analyzer-linux /usr/lib/sdk/rust-stable/bin/rust-analyzer"
             ]
         },
         {
