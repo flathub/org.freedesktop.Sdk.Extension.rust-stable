@@ -135,8 +135,17 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2020-12-28/rust-analyzer-linux",
-                    "sha256": "6e390a789c997ec5f6eb4b536c2c9395f5374e8815ce7fc4a51dce41cd44cd19"
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-01-11/rust-analyzer-linux",
+                    "sha256": "4b7c0e9da7c954098b6a08edab6ecb4787fcff03507dcede88d9683b7e45ddeb",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"rust-analyzer-linux\") | .browser_download_url"
+                    }
                 }
             ],
             "buildsystem": "simple",
