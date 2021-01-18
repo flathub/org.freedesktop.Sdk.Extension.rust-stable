@@ -22,10 +22,19 @@
             "cleanup": [
                 "/share/doc/rust/html"
             ],
-            "post-install": [
-                "rm /usr/lib/sdk/rust-stable/bin/rust-analyzer"
-            ],
             "sources": [
+                {
+                    "type": "file",
+                    "dest": "rust-analyzer",
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-01-18/rust-analyzer-linux",
+                    "sha256": "54cc3dc1d750364b79f8c2629ebc86ac1ec6d6d0534a63d3982cae95ac0327c9",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"rust-analyzer-linux\") | .browser_download_url"
+                    }
+                },
                 {
                     "type": "archive",
                     "only-arches": [
@@ -127,30 +136,8 @@
             "build-commands": [
                 "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose",
                 "test -n \"$COMPAT_TARGET\" &&  cd \"rust-$COMPAT_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose --components=rust-std-$COMPAT_TARGET,rust-analysis-$COMPAT_TARGET",
-                "cd rust-src && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
-            ]
-        },
-        {
-            "name": "rust-analyzer",
-            "only-arches": [
-                "x86_64"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-01-18/rust-analyzer-linux",
-                    "sha256": "54cc3dc1d750364b79f8c2629ebc86ac1ec6d6d0534a63d3982cae95ac0327c9",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
-                        "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"rust-analyzer-linux\") | .browser_download_url"
-                    }
-                }
-            ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -m 755 rust-analyzer-linux /usr/lib/sdk/rust-stable/bin/rust-analyzer"
+                "cd rust-src && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose",
+                "install -m 755 rust-analyzer/rust-analyzer-linux /usr/lib/sdk/rust-stable/bin/rust-analyzer"
             ]
         },
         {
