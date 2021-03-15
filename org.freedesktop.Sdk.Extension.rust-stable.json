@@ -139,8 +139,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-03-08/rust-analyzer-linux",
-                    "sha256": "deda4db8ef73f994c8bfa067b753e6c54250349703a6d310abed97b8065b946b",
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-03-15/rust-analyzer-linux",
+                    "sha256": "5502254706211b8d9d24995118a180c0156d45b590d44957312445660ba9672d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
