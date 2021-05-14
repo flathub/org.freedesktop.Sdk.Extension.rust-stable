@@ -19,9 +19,6 @@
         {
             "name": "rust",
             "buildsystem": "simple",
-            "cleanup": [
-                "/share/doc/rust/html"
-            ],
             "post-install": [
                 "rm /usr/lib/sdk/rust-stable/bin/rust-analyzer"
             ],
@@ -126,7 +123,7 @@
                 }
             },
             "build-commands": [
-                "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose",
+                "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --without=rust-docs --disable-ldconfig --verbose",
                 "test -n \"$COMPAT_TARGET\" &&  cd \"rust-$COMPAT_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose --components=rust-std-$COMPAT_TARGET,rust-analysis-$COMPAT_TARGET",
                 "cd rust-src && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
             ]
