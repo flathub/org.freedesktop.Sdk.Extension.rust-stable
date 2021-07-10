@@ -136,18 +136,20 @@
             "sources": [
                 {
                     "type": "file",
+                    "dest-filename": "rust-analyzer-linux.gz",
                     "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-05-17/rust-analyzer-linux",
                     "sha256": "c5d516d4d36e546b087988328a8c1539ce08d40b3455872a41eb130931ce8b34",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
                         "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"rust-analyzer-linux\") | .browser_download_url"
+                        "url-query": ".assets[] | select(.name==\"rust-analyzer-x86_64-unknown-linux-gnu.gz\") | .browser_download_url"
                     }
                 }
             ],
             "buildsystem": "simple",
             "build-commands": [
+                "gunzip rust-analyzer-linux.gz",
                 "install -m 755 rust-analyzer-linux /usr/lib/sdk/rust-stable/bin/rust-analyzer"
             ]
         },
