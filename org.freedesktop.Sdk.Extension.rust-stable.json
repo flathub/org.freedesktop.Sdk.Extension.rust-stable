@@ -130,24 +130,41 @@
         },
         {
             "name": "rust-analyzer",
-            "only-arches": [
-                "x86_64"
-            ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-05-17/rust-analyzer-linux",
-                    "sha256": "c5d516d4d36e546b087988328a8c1539ce08d40b3455872a41eb130931ce8b34",
+                    "dest-filename": "rust-analyzer-linux.gz",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-07-05/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+                    "sha256": "eaa664b69342d1ee6e98adcd45653d5be8530f94784de2078653bdf6d8baa24c",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
                         "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"rust-analyzer-linux\") | .browser_download_url"
+                        "url-query": ".assets[] | select(.name==\"rust-analyzer-x86_64-unknown-linux-gnu.gz\") | .browser_download_url"
+                    }
+                },
+                {
+                    "type": "file",
+                    "dest-filename": "rust-analyzer-linux.gz",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-07-05/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "e13d7142ce1b363f94672496497afc751646b20aa80ab7b363f29693dc7732d1",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"rust-analyzer-aarch64-unknown-linux-gnu.gz\") | .browser_download_url"
                     }
                 }
             ],
             "buildsystem": "simple",
             "build-commands": [
+                "gunzip rust-analyzer-linux.gz",
                 "install -m 755 rust-analyzer-linux /usr/lib/sdk/rust-stable/bin/rust-analyzer"
             ]
         },
