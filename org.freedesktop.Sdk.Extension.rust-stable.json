@@ -1,5 +1,6 @@
 {
     "id": "org.freedesktop.Sdk.Extension.rust-stable",
+    "branch": "21.08beta",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
