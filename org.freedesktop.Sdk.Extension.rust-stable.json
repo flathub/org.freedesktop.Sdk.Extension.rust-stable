@@ -19,9 +19,6 @@
         {
             "name": "rust",
             "buildsystem": "simple",
-            "post-install": [
-                "rm /usr/lib/sdk/rust-stable/bin/rust-analyzer"
-            ],
             "sources": [
                 {
                     "type": "archive",
