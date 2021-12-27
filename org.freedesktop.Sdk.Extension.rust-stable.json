@@ -149,8 +149,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-12-20/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-                    "sha256": "e900a8865df4f13852d9e82c82e0b26742e86b28e28b3b6475ef1a37652fa1cc",
+                    "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2021-12-27/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "b8ffa13cbe821d386f7d4d6957a8a0805c7d84d34a31d34225920a191748357d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
