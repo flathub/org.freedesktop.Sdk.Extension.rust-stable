@@ -27,8 +27,8 @@
                         "aarch64"
                     ],
                     "dest": "rust-armv7-unknown-linux-gnueabihf",
-                    "url": "https://static.rust-lang.org/dist/2021-12-02/rust-1.57.0-armv7-unknown-linux-gnueabihf.tar.xz",
-                    "sha256": "910a5be23ed2dfe82f50bd976393bf5d07e2b31510a6d080234d400412544228",
+                    "url": "https://static.rust-lang.org/dist/2022-01-13/rust-1.58.0-armv7-unknown-linux-gnueabihf.tar.xz",
+                    "sha256": "36c58fd6cf5d1d8a356b89138e7ad6fd4a6f0fb53ff0ae187a602aaeee29ba8d",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -41,8 +41,8 @@
                         "aarch64"
                     ],
                     "dest": "rust-aarch64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2021-12-02/rust-1.57.0-aarch64-unknown-linux-gnu.tar.xz",
-                    "sha256": "6ee1ea2daae52c44cb970cf2c740edca02d2234210ed45a79a58c4c87d45d71e",
+                    "url": "https://static.rust-lang.org/dist/2022-01-13/rust-1.58.0-aarch64-unknown-linux-gnu.tar.xz",
+                    "sha256": "e31f80898d42de068a6fc3f93900a7b41f56c2a85bda0646f1a5c752ab7900e0",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -55,8 +55,8 @@
                         "x86_64"
                     ],
                     "dest": "rust-x86_64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2021-12-02/rust-1.57.0-x86_64-unknown-linux-gnu.tar.xz",
-                    "sha256": "590772474cb5d24c3d85b8fb770246e4a6b7dd8b13a2ab1db2c50a3965a36e1a",
+                    "url": "https://static.rust-lang.org/dist/2022-01-13/rust-1.58.0-x86_64-unknown-linux-gnu.tar.xz",
+                    "sha256": "fc77eefec4d1bff9c578c94f5a2c054d196ae51bdea0e042b4d0829efc58476c",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -71,8 +71,8 @@
                         "x86_64"
                     ],
                     "dest": "rust-i686-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2021-12-02/rust-1.57.0-i686-unknown-linux-gnu.tar.xz",
-                    "sha256": "0fd516ab8d8c23850464adf535f648e07586c48444fd5fc3ee4a7f6b18521ba1",
+                    "url": "https://static.rust-lang.org/dist/2022-01-13/rust-1.58.0-i686-unknown-linux-gnu.tar.xz",
+                    "sha256": "d25f32fe72bcd077b8b4cb61ba280655f0c70607aeae19cadb70562bb69200db",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -82,8 +82,8 @@
                 {
                     "type": "archive",
                     "dest": "rust-src",
-                    "url": "https://static.rust-lang.org/dist/2021-12-02/rust-src-1.57.0.tar.xz",
-                    "sha256": "c4a12e59c54925f56d0a966ebb088214d2e1523bef96c56d1999a0c2ba89835b",
+                    "url": "https://static.rust-lang.org/dist/2022-01-13/rust-src-1.58.0.tar.xz",
+                    "sha256": "0c959ec0d6b0f6cd08167a142fb0a140ae130c3158acfcdf44728c46a568ea2e",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust-src",
