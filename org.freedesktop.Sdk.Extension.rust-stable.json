@@ -166,6 +166,45 @@
             ]
         },
         {
+            "name": "mold",
+            "sources": [
+                {
+                    "type": "archive",
+                    "dest-filename": "mold-linux.tar.gz",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/rui314/mold/releases/download/v1.2.0/mold-1.2.0-x86_64-linux.tar.gz",
+                    "sha256": "e818703859ce867bb4f57f4f9eed9da427d012bf4bc7a350e27f0d0039dab11f",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 241732,
+                        "stable-only": true,
+                        "url-template": "https://github.com/rui314/mold/releases/download/v1.2/mold-$version-x86_64-linux.tar.gz"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "dest-filename": "mold-linux.tar.gz",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/rui314/mold/releases/download/v1.2.0/mold-1.2.0-aarch64-linux.tar.gz",
+                    "sha256": "da97071358261cb9c3f6f058879119a544f91a5f692c0042546f30824d2f5ab2",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 241732,
+                        "stable-only": true,
+                        "url-template": "https://github.com/rui314/mold/releases/download/v1.2/mold-$version-aarch64-linux.tar.gz"
+                    }
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m 755 bin/mold /usr/lib/sdk/rust-stable/bin/mold"
+            ]
+        },
+        {
             "name": "scripts",
             "sources": [
                 {
