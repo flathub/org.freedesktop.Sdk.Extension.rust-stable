@@ -15,3 +15,6 @@ In order to use the (fast) [mold](https://github.com/rui314/mold) linker:
 linker = "clang"
 rustflags = ["-C", "link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"]
 ```
+
+Note: llvm12 is needed until there is a release of gcc12.1.
+As soon as gcc12.1 is in the freedesktop sdk, gcc can be used instead of clang.
