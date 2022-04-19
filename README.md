@@ -26,3 +26,5 @@ In order to use this extension in flatpak SDK environment you may add all provid
 ```
 source /usr/lib/sdk/rust-stable/enable.sh
 ```
+
+You can also combine this extension with `lldb` using the LLVM SDK extension. See the extension's [readme](https://github.com/flathub/org.freedesktop.Sdk.Extension.llvm13) for more information.
