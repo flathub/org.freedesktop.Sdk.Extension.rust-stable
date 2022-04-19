@@ -19,3 +19,10 @@ rustflags = ["-C", "link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"]
 
 Note: llvm13 is needed until there is a release of gcc12.1.
 As soon as gcc12.1 is in the freedesktop sdk, gcc can be used instead of clang.
+
+## Debugging/Development
+
+In order to use this extension in flatpak SDK environment you may add all provided tools in your PATH by executing first:
+```
+source /usr/lib/sdk/rust-stable/enable.sh
+```
