@@ -17,12 +17,12 @@ In total, the changed parts of your flatpak manifest should look like this:
 
 ```json
 {
-    "sdk-extensions" : [
+    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
         "org.freedesktop.Sdk.Extension.llvm13"
     ],
     "build-options": {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm13/bin",
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm13/bin",
         "env": {
             "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang",
             "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold",
