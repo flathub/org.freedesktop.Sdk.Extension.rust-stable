@@ -134,8 +134,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2022-06-20/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-                    "sha256": "e8cd17b6d397ddb5cab56d18be7011c549cb242705c0a499211a1426f4bde6a7",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2022-06-27/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+                    "sha256": "ad1994801c4e26bb9ee26510b97ea7290ad6af06b991690ce31c555bfb5f3eff",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -149,8 +149,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2022-06-20/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-                    "sha256": "914d600a75554262556fe215d427708283cccd40e063b7a9e6c2a1e8cd293de6",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2022-06-27/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "19524e9c976021fb96c8f1a51fa8a9b48ec48f7a4aa39596a7ac1c1e64f2aa4e",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
