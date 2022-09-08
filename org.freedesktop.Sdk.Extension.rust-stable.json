@@ -205,6 +205,45 @@
             ]
         },
         {
+            "name": "sccache",
+            "sources": [
+                {
+                    "type": "archive",
+                    "dest-filename": "sccache-linux.tar.gz",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/mozilla/sccache/releases/download/v0.3.0/sccache-v0.3.0-x86_64-unknown-linux-musl.tar.gz",
+                    "sha256": "e6cd8485f93d683a49c83796b9986f090901765aa4feb40d191b03ea770311d8",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 227267,
+                        "stable-only": true,
+                        "url-template": "https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-x86_64-unknown-linux-musl.tar.gz"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "dest-filename": "sccache-linux.tar.gz",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/mozilla/sccache/releases/download/v0.3.0/sccache-v0.3.0-aarch64-unknown-linux-musl.tar.gz",
+                    "sha256": "9ae4e1056b3d51546fa42a4cbf8e95aa84a4b2b4c838f9114e01b7fef5c0abd0",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 227267,
+                        "stable-only": true,
+                        "url-template": "https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-aarch64-unknown-linux-musl.tar.gz"
+                    }
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m 755 sccache /usr/lib/sdk/rust-stable/bin/sccache"
+            ]
+        },
+        {
             "name": "scripts",
             "sources": [
                 {
