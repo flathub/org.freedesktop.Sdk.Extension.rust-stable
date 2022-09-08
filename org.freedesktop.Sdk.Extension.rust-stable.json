@@ -180,7 +180,7 @@
                         "type": "anitya",
                         "project-id": 241732,
                         "stable-only": true,
-                        "url-template": "https://github.com/rui314/mold/releases/download/v1.2/mold-$version-x86_64-linux.tar.gz"
+                        "url-template": "https://github.com/rui314/mold/releases/download/v$version/mold-$version-x86_64-linux.tar.gz"
                     }
                 },
                 {
@@ -195,7 +195,7 @@
                         "type": "anitya",
                         "project-id": 241732,
                         "stable-only": true,
-                        "url-template": "https://github.com/rui314/mold/releases/download/v1.2/mold-$version-aarch64-linux.tar.gz"
+                        "url-template": "https://github.com/rui314/mold/releases/download/v$version/mold-$version-aarch64-linux.tar.gz"
                     }
                 }
             ],
