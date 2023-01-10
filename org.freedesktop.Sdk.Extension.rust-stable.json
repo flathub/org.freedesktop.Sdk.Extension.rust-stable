@@ -135,7 +135,7 @@
                         "x86_64"
                     ],
                     "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-01-09/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-                    "sha256": "2d6baf57929d677c895f0703d8401fe251b2b1cf929d02729160de35e4c71d6f",
+                    "sha256": "32e84be6bab29c9dc194754e9a58a0d1ff118b9ddd835fa64e02d8960a83bcd8",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
