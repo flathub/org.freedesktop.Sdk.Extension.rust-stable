@@ -205,6 +205,49 @@
             ]
         },
         {
+            "name": "cargo-c",
+            "sources": [
+                {
+                    "type": "archive",
+                    "dest-filename": "cargo-c-linux.tar.gz",
+                    "strip-components": 0,
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.9.18/cargo-c-x86_64-unknown-linux-musl.tar.gz",
+                    "sha256": "600d81ca4d336fbb97d457ca7ed557fb689cfcd9cf7e759ed8fc82f444025d63",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"cargo-c-x86_64-unknown-linux-musl.tar.gz\") | .browser_download_url"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "dest-filename": "cargo-c-linux.tar.gz",
+                    "strip-components": 0,
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.9.18/cargo-c-aarch64-unknown-linux-musl.tar.gz",
+                    "sha256": "ea567f82fdec09e820db0827b11712529d4a499f54c17cae20f35f7963e37b23",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"cargo-c-aarch64-unknown-linux-musl.tar.gz\") | .browser_download_url"
+                    }
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands":[
+                "install -m 755 cargo-capi /usr/lib/sdk/rust-stable/bin/cargo-capi",
+                "install -m 755 cargo-cbuild /usr/lib/sdk/rust-stable/bin/cargo-cbuild",
+                "install -m 755 cargo-cinstall /usr/lib/sdk/rust-stable/bin/cargo-cinstall"
+            ]
+        },
+        {
             "name": "scripts",
             "sources": [
                 {
