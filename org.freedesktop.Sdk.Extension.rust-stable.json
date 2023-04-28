@@ -1,10 +1,10 @@
 {
     "id": "org.freedesktop.Sdk.Extension.rust-stable",
-    "branch": "22.08beta",
+    "branch": "22.08",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "22.08beta",
+    "runtime-version": "22.08",
     "sdk-extensions": [],
     "separate-locales": false,
     "appstream-compose": false,
@@ -27,8 +27,8 @@
                         "aarch64"
                     ],
                     "dest": "rust-armv7-unknown-linux-gnueabihf",
-                    "url": "https://static.rust-lang.org/dist/2022-06-30/rust-1.62.0-armv7-unknown-linux-gnueabihf.tar.xz",
-                    "sha256": "17419d7441f25df198939c416afc8ffa082c3089356de94804990bf8be11eff5",
+                    "url": "https://static.rust-lang.org/dist/2023-04-20/rust-1.69.0-armv7-unknown-linux-gnueabihf.tar.xz",
+                    "sha256": "d22577fab7be91aa8099c9e494be88c5e1dc45a5ab5783703a89514423bd3876",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -41,8 +41,8 @@
                         "aarch64"
                     ],
                     "dest": "rust-aarch64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2022-06-30/rust-1.62.0-aarch64-unknown-linux-gnu.tar.xz",
-                    "sha256": "596edf892fac02f3a3b9a8f018f64551e2d58f0a840a8bad13793eb7224783bd",
+                    "url": "https://static.rust-lang.org/dist/2023-04-20/rust-1.69.0-aarch64-unknown-linux-gnu.tar.xz",
+                    "sha256": "1d92fc3dd807c0182d0f87b90a9d5dac8be4164d3096634e2da23cc2a6c39792",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -55,8 +55,8 @@
                         "x86_64"
                     ],
                     "dest": "rust-x86_64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2022-06-30/rust-1.62.0-x86_64-unknown-linux-gnu.tar.xz",
-                    "sha256": "29d0cb095bc006f82fb99bc4b9081aff813d803426ef01c9d1bd2b150e68d035",
+                    "url": "https://static.rust-lang.org/dist/2023-04-20/rust-1.69.0-x86_64-unknown-linux-gnu.tar.xz",
+                    "sha256": "fe0d3eb8604a72cd70030b72b3199a2eb7ed2a427ac7462e959e93b367ff5855",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -71,8 +71,8 @@
                         "x86_64"
                     ],
                     "dest": "rust-i686-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2022-06-30/rust-1.62.0-i686-unknown-linux-gnu.tar.xz",
-                    "sha256": "8851657b282e0b76056b4179c5f2c77f0624da9e031a4dab1abb33be7c251238",
+                    "url": "https://static.rust-lang.org/dist/2023-04-20/rust-1.69.0-i686-unknown-linux-gnu.tar.xz",
+                    "sha256": "5f05309294ba144ef1dc69dff8c34405ce5ed1ee9200b6ab49540287a40f2143",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -82,8 +82,8 @@
                 {
                     "type": "archive",
                     "dest": "rust-src",
-                    "url": "https://static.rust-lang.org/dist/2022-06-30/rust-src-1.62.0.tar.xz",
-                    "sha256": "14856905c4e49775270c7162403032c2c97f4e656eb12514c5ad9a59c997d2bd",
+                    "url": "https://static.rust-lang.org/dist/2023-04-20/rust-src-1.69.0.tar.xz",
+                    "sha256": "286abeaec3caba40c07d801d7474c6c522a358eb0618225c9265e136a601f4dc",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust-src",
@@ -120,7 +120,7 @@
                 }
             },
             "build-commands": [
-                "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --without=rust-docs --disable-ldconfig --verbose",
+                "cd \"rust-$NATIVE_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --without=rust-docs --without=rust-docs-json-preview --disable-ldconfig --verbose",
                 "test -n \"$COMPAT_TARGET\" &&  cd \"rust-$COMPAT_TARGET\" && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose --components=rust-std-$COMPAT_TARGET,rust-analysis-$COMPAT_TARGET",
                 "cd rust-src && ./install.sh --prefix=/usr/lib/sdk/rust-stable --disable-ldconfig --verbose"
             ]
@@ -134,8 +134,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2022-06-27/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-                    "sha256": "ad1994801c4e26bb9ee26510b97ea7290ad6af06b991690ce31c555bfb5f3eff",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-04-24/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+                    "sha256": "04980e43ceef99f7e16393a43fb1f4044809e4b0847e025ec8859cd47c73f6fc",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -149,8 +149,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2022-06-27/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-                    "sha256": "19524e9c976021fb96c8f1a51fa8a9b48ec48f7a4aa39596a7ac1c1e64f2aa4e",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-04-24/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "eb89b24661352e80ffb0dcdb0461848dc14cc88dfbc5d314200aaa380e6c5bc2",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -174,13 +174,13 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rui314/mold/releases/download/v1.2.0/mold-1.2.0-x86_64-linux.tar.gz",
-                    "sha256": "e818703859ce867bb4f57f4f9eed9da427d012bf4bc7a350e27f0d0039dab11f",
+                    "url": "https://github.com/rui314/mold/releases/download/v1.11.0/mold-1.11.0-x86_64-linux.tar.gz",
+                    "sha256": "bf788940db4a9ac19e7745c821bf6ee18ff4d75441a803d84f86c9f3b0aa2a5e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 241732,
                         "stable-only": true,
-                        "url-template": "https://github.com/rui314/mold/releases/download/v1.2/mold-$version-x86_64-linux.tar.gz"
+                        "url-template": "https://github.com/rui314/mold/releases/download/v$version/mold-$version-x86_64-linux.tar.gz"
                     }
                 },
                 {
@@ -189,13 +189,13 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rui314/mold/releases/download/v1.2.0/mold-1.2.0-aarch64-linux.tar.gz",
-                    "sha256": "da97071358261cb9c3f6f058879119a544f91a5f692c0042546f30824d2f5ab2",
+                    "url": "https://github.com/rui314/mold/releases/download/v1.11.0/mold-1.11.0-aarch64-linux.tar.gz",
+                    "sha256": "4d7f0cc976ed1dfde1ceeaadd16829427a477eba1b49ff82dd490395f32eb78c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 241732,
                         "stable-only": true,
-                        "url-template": "https://github.com/rui314/mold/releases/download/v1.2/mold-$version-aarch64-linux.tar.gz"
+                        "url-template": "https://github.com/rui314/mold/releases/download/v$version/mold-$version-aarch64-linux.tar.gz"
                     }
                 }
             ],

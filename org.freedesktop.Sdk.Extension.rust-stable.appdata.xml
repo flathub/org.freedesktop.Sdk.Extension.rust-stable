@@ -12,8 +12,17 @@
   <translation/>
   <update_contact>danigm@gnome.org</update_contact>
   <releases>
-    <release version="1.62.0" date="2022-06-30"/>
-    <release version="1.61.0" date="2022-05-19"/>
+    <release version="1.69.0" date="2023-04-20"/>
+    <release version="1.68.2" date="2023-03-28"/>
+    <release version="1.68.1" date="2023-03-23"/>
+    <release version="1.68.0" date="2023-03-09"/>
+    <release version="1.67.1" date="2023-02-09"/>
+    <release version="1.67.0" date="2023-01-26"/>
+    <release version="1.66.1" date="2023-01-10"/>
+    <release version="1.66.0" date="2022-12-15"/>
+    <release version="1.65.0" date="2022-11-03"/>
+    <release version="1.64.0" date="2022-09-22"/>
+    <release version="1.63.0" date="2022-08-11"/>
     <release version="1.60.0" date="2022-04-07"/>
     <release version="1.59.0" date="2022-02-24"/>
     <release version="1.58.1" date="2022-01-20"/>
