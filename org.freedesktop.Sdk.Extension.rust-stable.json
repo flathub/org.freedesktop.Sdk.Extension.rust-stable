@@ -214,8 +214,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.9.18/cargo-c-x86_64-unknown-linux-musl.tar.gz",
-                    "sha256": "600d81ca4d336fbb97d457ca7ed557fb689cfcd9cf7e759ed8fc82f444025d63",
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.9.24/cargo-c-x86_64-unknown-linux-musl.tar.gz",
+                    "sha256": "b07f16cfb8a519aab8e3b3283be08b0c176214cbade472d8bac42140aa899fd4",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
@@ -230,8 +230,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.9.18/cargo-c-aarch64-unknown-linux-musl.tar.gz",
-                    "sha256": "ea567f82fdec09e820db0827b11712529d4a499f54c17cae20f35f7963e37b23",
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.9.24/cargo-c-aarch64-unknown-linux-musl.tar.gz",
+                    "sha256": "17286b289075265a47cce1f76f8468801ac539f02ed9560cb470318474963652",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
@@ -241,7 +241,7 @@
                 }
             ],
             "buildsystem": "simple",
-            "build-commands":[
+            "build-commands": [
                 "install -m 755 cargo-capi /usr/lib/sdk/rust-stable/bin/cargo-capi",
                 "install -m 755 cargo-cbuild /usr/lib/sdk/rust-stable/bin/cargo-cbuild",
                 "install -m 755 cargo-cinstall /usr/lib/sdk/rust-stable/bin/cargo-cinstall"
