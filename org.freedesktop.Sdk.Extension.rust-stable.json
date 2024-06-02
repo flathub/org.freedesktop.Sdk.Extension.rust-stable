@@ -264,6 +264,30 @@
             ]
         },
         {
+            "name": "cargo-vendor-filterer",
+            "buildsystem": "simple",
+            "build-options": {
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "env": {
+                    "CARGO_HOME" : "/run/build/cargo-vendor-filterer/cargo"
+                }
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/coreos/cargo-vendor-filterer/",
+                    "commit": "28c7760484240184c95f76b5a3f11d92a6779ff1"
+                },
+                "./cargo-vendor-filterer.json"
+            ],
+            "build-commands": [
+                "mv ./cargo/config ./cargo/config.toml",
+                "cargo --offline fetch --manifest-path ./Cargo.toml --verbose",
+                "cargo --offline build --release --verbose",
+                "install -m 755 ./target/release/cargo-vendor-filterer /usr/lib/sdk/rust-stable/bin/cargo-vendor-filterer"
+            ]
+        },
+        {
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
