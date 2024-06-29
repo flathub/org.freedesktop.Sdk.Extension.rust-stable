@@ -1,10 +1,10 @@
 {
     "id": "org.freedesktop.Sdk.Extension.rust-stable",
-    "branch": "23.08",
+    "branch": "24.08beta",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "23.08",
+    "runtime-version": "24.08beta",
     "sdk-extensions": [],
     "separate-locales": false,
     "appstream-compose": false,
@@ -291,9 +291,9 @@
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/share/appdata",
-                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/appdata",
-                "appstream-compose  --basename=org.freedesktop.Sdk.Extension.rust-stable --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.Sdk.Extension.rust-stable"
+                "mkdir -p ${FLATPAK_DEST}/share/metainfo",
+                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/metainfo",
+                "appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}"
             ],
             "sources": [
                 {
