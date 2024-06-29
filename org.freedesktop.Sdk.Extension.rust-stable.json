@@ -1,10 +1,10 @@
 {
     "id": "org.freedesktop.Sdk.Extension.rust-stable",
-    "branch": "23.08beta",
+    "branch": "24.08beta",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "23.08beta",
+    "runtime-version": "24.08beta",
     "sdk-extensions": [],
     "separate-locales": false,
     "appstream-compose": false,
@@ -27,8 +27,8 @@
                         "aarch64"
                     ],
                     "dest": "rust-armv7-unknown-linux-gnueabihf",
-                    "url": "https://static.rust-lang.org/dist/2023-06-01/rust-1.70.0-armv7-unknown-linux-gnueabihf.tar.xz",
-                    "sha256": "f0209965ec561d79f076cd6d810188055a4ad68657e5e3c25be451753492864d",
+                    "url": "https://static.rust-lang.org/dist/2024-06-13/rust-1.79.0-armv7-unknown-linux-gnueabihf.tar.xz",
+                    "sha256": "11ac4303dfb6a8b86cc58792b154dd730a9dcba177d73ab38e8daae3c0519ef0",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -41,8 +41,8 @@
                         "aarch64"
                     ],
                     "dest": "rust-aarch64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2023-06-01/rust-1.70.0-aarch64-unknown-linux-gnu.tar.xz",
-                    "sha256": "a36e20a55e39c857f9ec69b146ae04572d5e666e76ff2dd6422cc8f575aed1c7",
+                    "url": "https://static.rust-lang.org/dist/2024-06-13/rust-1.79.0-aarch64-unknown-linux-gnu.tar.xz",
+                    "sha256": "8e7a2d514ee469325e5a7d0a2f0cad313aecb4c3da134f3bf84f7901a809d566",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -55,8 +55,8 @@
                         "x86_64"
                     ],
                     "dest": "rust-x86_64-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2023-06-01/rust-1.70.0-x86_64-unknown-linux-gnu.tar.xz",
-                    "sha256": "991b59d1d0cd0dfcb2463bd79d2df1a235380f725557cdee831ee3c1d87a3122",
+                    "url": "https://static.rust-lang.org/dist/2024-06-13/rust-1.79.0-x86_64-unknown-linux-gnu.tar.xz",
+                    "sha256": "ce552d6bf22a2544ea78647d98cb405d5089af58dbcaa4efea711bf8becd71c5",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -71,8 +71,8 @@
                         "x86_64"
                     ],
                     "dest": "rust-i686-unknown-linux-gnu",
-                    "url": "https://static.rust-lang.org/dist/2023-06-01/rust-1.70.0-i686-unknown-linux-gnu.tar.xz",
-                    "sha256": "e3fb7f9d825e1bd1720765a358361ba4517584f6d0c1a1d80b2230e2f97c9b88",
+                    "url": "https://static.rust-lang.org/dist/2024-06-13/rust-1.79.0-i686-unknown-linux-gnu.tar.xz",
+                    "sha256": "74a4b17c7b80b87d2e1f4fa83c8c0c5e920eee6d72fe570df97aa96d85fc25ec",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust",
@@ -82,8 +82,8 @@
                 {
                     "type": "archive",
                     "dest": "rust-src",
-                    "url": "https://static.rust-lang.org/dist/2023-06-01/rust-src-1.70.0.tar.xz",
-                    "sha256": "5701a30520c6bc280b96a1b9c376d9e2db5e8442b5f8ed539554c362e1ea4075",
+                    "url": "https://static.rust-lang.org/dist/2024-06-13/rust-src-1.79.0.tar.xz",
+                    "sha256": "0775222dd26c1e11de198ec54bc0efddf70e5a7155946626b06ddbf4c8be8886",
                     "x-checker-data": {
                         "type": "rust",
                         "package": "rust-src",
@@ -134,8 +134,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-04-24/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-                    "sha256": "04980e43ceef99f7e16393a43fb1f4044809e4b0847e025ec8859cd47c73f6fc",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-06-24/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+                    "sha256": "094655205c2f322c1627ab87a9e92d8f8b3ef9cb8da0d8d94b24fbb5ba8024ad",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -149,8 +149,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2023-04-24/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-                    "sha256": "eb89b24661352e80ffb0dcdb0461848dc14cc88dfbc5d314200aaa380e6c5bc2",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2024-06-24/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "dc9af8d6bc338c04fe67e8500f845481ea1f3a06ae18e055b4026945bbbd41f9",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -174,8 +174,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rui314/mold/releases/download/v1.11.0/mold-1.11.0-x86_64-linux.tar.gz",
-                    "sha256": "bf788940db4a9ac19e7745c821bf6ee18ff4d75441a803d84f86c9f3b0aa2a5e",
+                    "url": "https://github.com/rui314/mold/releases/download/v2.32.1/mold-2.32.1-x86_64-linux.tar.gz",
+                    "sha256": "d9caf252d58b5f6a0fa5aa30fbe05d17b1c84f498106dc634cbce73866abdfeb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 241732,
@@ -189,8 +189,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rui314/mold/releases/download/v1.11.0/mold-1.11.0-aarch64-linux.tar.gz",
-                    "sha256": "4d7f0cc976ed1dfde1ceeaadd16829427a477eba1b49ff82dd490395f32eb78c",
+                    "url": "https://github.com/rui314/mold/releases/download/v2.32.1/mold-2.32.1-aarch64-linux.tar.gz",
+                    "sha256": "18ffc28b392fef90f3a73b4c40445925a661298f255c3031753c351ae7c7600a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 241732,
@@ -202,6 +202,49 @@
             "buildsystem": "simple",
             "build-commands": [
                 "install -m 755 bin/mold /usr/lib/sdk/rust-stable/bin/mold"
+            ]
+        },
+        {
+            "name": "cargo-c",
+            "sources": [
+                {
+                    "type": "archive",
+                    "dest-filename": "cargo-c-linux.tar.gz",
+                    "strip-components": 0,
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.1/cargo-c-x86_64-unknown-linux-musl.tar.gz",
+                    "sha256": "5a85b4a6eaee25d0c5d5da539dcaee0e479d6a7a8190c28aaf5ca06c4fb83716",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"cargo-c-x86_64-unknown-linux-musl.tar.gz\") | .browser_download_url"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "dest-filename": "cargo-c-linux.tar.gz",
+                    "strip-components": 0,
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.1/cargo-c-aarch64-unknown-linux-musl.tar.gz",
+                    "sha256": "eb2e60b8bef1570d8140bbbcd48b4cac943395d797cab8b4f3747d2b2146b7a5",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"cargo-c-aarch64-unknown-linux-musl.tar.gz\") | .browser_download_url"
+                    }
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m 755 cargo-capi /usr/lib/sdk/rust-stable/bin/cargo-capi",
+                "install -m 755 cargo-cbuild /usr/lib/sdk/rust-stable/bin/cargo-cbuild",
+                "install -m 755 cargo-cinstall /usr/lib/sdk/rust-stable/bin/cargo-cinstall"
             ]
         },
         {
@@ -221,12 +264,36 @@
             ]
         },
         {
+            "name": "cargo-vendor-filterer",
+            "buildsystem": "simple",
+            "build-options": {
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "env": {
+                    "CARGO_HOME": "/run/build/cargo-vendor-filterer/cargo"
+                }
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/coreos/cargo-vendor-filterer/",
+                    "commit": "28c7760484240184c95f76b5a3f11d92a6779ff1"
+                },
+                "./cargo-vendor-filterer.json"
+            ],
+            "build-commands": [
+                "mv ./cargo/config ./cargo/config.toml",
+                "cargo --offline fetch --manifest-path ./Cargo.toml --verbose",
+                "cargo --offline build --release --verbose",
+                "install -m 755 ./target/release/cargo-vendor-filterer /usr/lib/sdk/rust-stable/bin/cargo-vendor-filterer"
+            ]
+        },
+        {
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/share/appdata",
-                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/appdata",
-                "appstream-compose  --basename=org.freedesktop.Sdk.Extension.rust-stable --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.Sdk.Extension.rust-stable"
+                "mkdir -p ${FLATPAK_DEST}/share/metainfo",
+                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/metainfo",
+                "appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}"
             ],
             "sources": [
                 {
