@@ -11,8 +11,11 @@
   <url type="homepage">https://github.com/flathub/org.freedesktop.Sdk.Extension.rust-stable/</url>
   <update_contact>danigm@gnome.org</update_contact>
   <releases>
-    <release version="1.84.0" date="2025-01-09">
+    <release version="1.84.1" date="2025-01-30">
       <description></description>
+    </release>
+    <release version="1.84.0" date="2025-01-09">
+      <description/>
     </release>
     <release version="1.83.0" date="2024-11-28">
       <description/>
