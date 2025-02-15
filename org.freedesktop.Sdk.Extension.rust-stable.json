@@ -288,6 +288,31 @@
             ]
         },
         {
+            "name": "rust-bindgen",
+            "buildsystem": "simple",
+            "build-options": {
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "env": {
+                    "CARGO_HOME": "/run/build/rust-bindgen/cargo"
+                }
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/rust-lang/rust-bindgen/",
+                    "commit": "af7fd38d5e80514406fb6a8bba2d407d252c30b9",
+                    "tag": "v0.71.1"
+                },
+                "./rust-bindgen.json"
+            ],
+            "build-commands": [
+                "mv ./cargo/config ./cargo/config.toml",
+                "cargo --offline fetch --manifest-path ./Cargo.toml --verbose",
+                "cargo --offline build --release --verbose",
+                "install -m 755 ./target/release/bindgen /usr/lib/sdk/rust-stable/bin/bindgen"
+            ]
+        },
+        {
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
