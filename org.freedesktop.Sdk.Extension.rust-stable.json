@@ -134,8 +134,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-07-14/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-                    "sha256": "33e0daf50933091fbcd81f68699f5d6bef99371b765791496ca631d6b58da28e",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-07-28/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+                    "sha256": "20ae0875f1a8be4ca6f017ebcd2901c625268a3a8040e71f4bfad6b2bb7fa119",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -149,8 +149,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-07-14/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-                    "sha256": "d5375c72df2d01e50a268f916050a82d4585a55c07c6cda2159f0de9aef9245a",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2025-07-28/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "ad0291d07e5d540dc143284b206e1a0fe3e2c08672468115a305dc59b1081831",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -174,8 +174,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rui314/mold/releases/download/v2.40.2/mold-2.40.2-x86_64-linux.tar.gz",
-                    "sha256": "9f2c16bae380813f4aed34d2ab0534f5e1b82df154923de33e2edf8e5648f9d8",
+                    "url": "https://github.com/rui314/mold/releases/download/v2.40.3/mold-2.40.3-x86_64-linux.tar.gz",
+                    "sha256": "ecb9c9cd7ec00b549fe22ecf7c2025edd7b15e749e8740773739283b19efed22",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 241732,
@@ -189,8 +189,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rui314/mold/releases/download/v2.40.2/mold-2.40.2-aarch64-linux.tar.gz",
-                    "sha256": "a390f5fafe03d4b73f3ee92cc56e521973cf7a6c1f800912e4ee0b3d8991f783",
+                    "url": "https://github.com/rui314/mold/releases/download/v2.40.3/mold-2.40.3-aarch64-linux.tar.gz",
+                    "sha256": "91f44245e4d15d10c7c9c2060142cd55b82b263f0bda8c3b8df7c86720c343fe",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 241732,
