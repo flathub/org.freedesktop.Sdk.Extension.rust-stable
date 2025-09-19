@@ -201,7 +201,8 @@
             ],
             "buildsystem": "simple",
             "build-commands": [
-                "install -m 755 bin/mold /usr/lib/sdk/rust-stable/bin/mold"
+                "install -m 755 bin/mold /usr/lib/sdk/rust-stable/bin/mold",
+                "install -m 755 bin/ld.mold /usr/lib/sdk/rust-stable/bin/ld.mold"
             ]
         },
         {
