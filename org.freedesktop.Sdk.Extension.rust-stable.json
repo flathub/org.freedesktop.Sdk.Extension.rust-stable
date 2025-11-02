@@ -214,8 +214,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.16/cargo-c-x86_64-unknown-linux-musl.tar.gz",
-                    "sha256": "4cfff0a2d599b6588e9bca4ec7d3c8fba57fd019914060f51174d04cc91f3ae4",
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.18/cargo-c-x86_64-unknown-linux-musl.tar.gz",
+                    "sha256": "c7972613334034cc09bb196c5b94505dfac6486eb25c705ecdccd821048c9c0d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
@@ -230,8 +230,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.16/cargo-c-aarch64-unknown-linux-musl.tar.gz",
-                    "sha256": "5c9c64aec274168066dcc764eeb7e630f914e191e0f65f14e96a415788e551fb",
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.18/cargo-c-aarch64-unknown-linux-musl.tar.gz",
+                    "sha256": "07b9f72490a1df91fa22ea1bb3158f035613b9bba7895098555d1803b3924967",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
