@@ -44,7 +44,7 @@ In total, the changed parts of your Flatpak manifest should look like this:
 ### With clang
 
 1. Add this extension.
-2. Add a version of the [`org.freedesktop.Sdk.Extension.llvm{version}`](https://github.com/flathub?q=org.freedesktop.Sdk.Extension.llvm)
+2. Add an [`org.freedesktop.Sdk.Extension.llvm{version}`](https://github.com/flathub?q=org.freedesktop.Sdk.Extension.llvm)
    extension compatible with the `runtime` in your Flatpak manifest.
    
    For example, if your runtime is based on the `org.freedesktop.Platform//25.08` runtime, you can
@@ -86,4 +86,6 @@ In order to use this extension in flatpak SDK environment you may add all provid
 source /usr/lib/sdk/rust-stable/enable.sh
 ```
 
-You can also combine this extension with `lldb` using the LLVM SDK extension. See the extension's [readme](https://github.com/flathub/org.freedesktop.Sdk.Extension.llvm20) for more information.
+You can also combine this extension with `lldb` using an [`org.freedesktop.Sdk.Extension.llvm{version}`](https://github.com/flathub?q=org.freedesktop.Sdk.Extension.llvm)
+extension compatible with the `runtime` in your Flatpak manifest. See the README of the chosen
+extension for more information.
