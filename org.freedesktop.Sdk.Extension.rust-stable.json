@@ -202,7 +202,9 @@
             "buildsystem": "simple",
             "build-commands": [
                 "install -m 755 bin/mold /usr/lib/sdk/rust-stable/bin/mold",
-                "install -m 755 bin/ld.mold /usr/lib/sdk/rust-stable/bin/ld.mold"
+                "install -m 755 bin/ld.mold /usr/lib/sdk/rust-stable/bin/ld.mold",
+                "mkdir -p /usr/lib/sdk/rust-stable/share/licenses/mold/",
+                "install -m 755 share/doc/mold/LICENSE /usr/lib/sdk/rust-stable/share/licenses/mold/LICENSE"
             ]
         },
         {
