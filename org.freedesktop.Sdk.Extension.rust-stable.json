@@ -303,8 +303,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/rust-lang/rust-bindgen/",
-                    "commit": "af7fd38d5e80514406fb6a8bba2d407d252c30b9",
-                    "tag": "v0.71.1"
+                    "commit": "d874de8d646d9b8a3e7ba2db2bcd52f2fba8f1f5",
+                    "tag": "v0.72.1"
                 },
                 "./rust-bindgen.json"
             ],
