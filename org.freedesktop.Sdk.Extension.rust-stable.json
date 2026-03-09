@@ -134,8 +134,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-03-02/rust-analyzer-x86_64-unknown-linux-gnu.gz",
-                    "sha256": "24c1da90e7570aafb28d63d3619316284af827a5aea3bc17b5da26f485f7cdda",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-03-09/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+                    "sha256": "9864c330afaed79949a2d82eedeca44ad9024f5f04a9b2ec226539988125161e",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -149,8 +149,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-03-02/rust-analyzer-aarch64-unknown-linux-gnu.gz",
-                    "sha256": "19d7e53c89b343a4110ee29fd3dbcead3e827437177d90fd5a21f64f186981d9",
+                    "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-03-09/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+                    "sha256": "c017ce9d18df853a39a5aabd5c48389b01c0c5484ec9fe7cd9939374cab4a177",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/rust-analyzer/rust-analyzer/releases/latest",
@@ -217,8 +217,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.20/cargo-c-x86_64-unknown-linux-musl.tar.gz",
-                    "sha256": "4f886fda551b9105efe6e0abae0f9f0d76da2b7faccf8db2b15f3b680841b3e4",
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.21/cargo-c-x86_64-unknown-linux-musl.tar.gz",
+                    "sha256": "f58a5ab61cfda38a50eeef076e269dfb42567369ab243c561dfae2a7dea8c615",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
@@ -233,8 +233,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.20/cargo-c-aarch64-unknown-linux-musl.tar.gz",
-                    "sha256": "7779ed479c615631a5a7ae7e51cdc7c20eb067d6758b1134f9375ae860eb5efd",
+                    "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.21/cargo-c-aarch64-unknown-linux-musl.tar.gz",
+                    "sha256": "af18669f38024d50a22725074baf98b21898a5bba983b67119f9201806cd5fd7",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lu-zero/cargo-c/releases/latest",
