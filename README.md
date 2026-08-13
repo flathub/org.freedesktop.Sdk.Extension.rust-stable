@@ -47,7 +47,7 @@ In total, the changed parts of your Flatpak manifest should look like this:
 2. Add an [`org.freedesktop.Sdk.Extension.llvm{version}`](https://github.com/flathub?q=org.freedesktop.Sdk.Extension.llvm)
    extension compatible with the `runtime` in your Flatpak manifest.
    
-   For example, if your runtime is based on the `org.freedesktop.Platform//25.08` runtime, you can
+   For example, if your runtime is based on the `org.freedesktop.Platform//26.08` runtime, you can
    use the [llvm20](https://github.com/flathub/org.freedesktop.Sdk.Extension.llvm20)
    or [llvm21](https://github.com/flathub/org.freedesktop.Sdk.Extension.llvm21) extensions.
    
