@@ -7,7 +7,6 @@
     "runtime-version": "26.08beta",
     "sdk-extensions": [],
     "separate-locales": false,
-    "appstream-compose": false,
     "cleanup": [
         "/share/info",
         "/share/man"
@@ -320,8 +319,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "mkdir -p ${FLATPAK_DEST}/share/metainfo",
-                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/metainfo",
-                "appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}"
+                "cp org.freedesktop.Sdk.Extension.rust-stable.appdata.xml ${FLATPAK_DEST}/share/metainfo"
             ],
             "sources": [
                 {
